@@ -155,7 +155,7 @@ export default function BFPCLanding() {
                 </div>
               </div>
               <div className="relative">
-                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-green-100 shadow-xl">
+                <div className=" backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-green-100 shadow-xl">
                   <div className="grid grid-cols-2 gap-4">
                     <Card className="border-green-200 bg-white/95">
                       <CardContent className="p-4">
@@ -348,7 +348,7 @@ export default function BFPCLanding() {
                       Real stories from farmers who have transformed their operations with BFPC
                      </p>
                    </div>
-
+        
                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                      {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-green-100">
