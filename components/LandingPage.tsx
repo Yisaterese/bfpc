@@ -8,15 +8,15 @@ import {
   Handshake,
   Leaf,
   MapPin,
-  MessageCircle,
   Shield,
-  Smartphone, Star,
+  Star,
   TrendingUp,
   Users,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useEffect, useState } from "react"
+import Link from "next/link";
 
 export default function BFPCLanding() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -92,7 +92,9 @@ export default function BFPCLanding() {
                   Contact
                 </a>
               </div>
-              <Button className="bg-green-600 hover:bg-green-700 text-white">Get Started</Button>
+              <Link href="/login">
+                <Button className="bg-green-600 hover:bg-green-700 text-white">Get Started</Button>
+              </Link>
             </div>
           </div>
         </nav>
