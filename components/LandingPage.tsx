@@ -75,8 +75,11 @@ export default function BFPCLanding() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
               <div className="flex items-center space-x-2">
-                <Leaf className="h-8 w-8 text-green-600" />
-                <span className="text-xl font-bold text-green-800">BFPC</span>
+                <a href="#hero"
+                   className="flex items-center space-x-2 text-green-800 hover:text-green-900 transition-colors">
+                  <Leaf className="h-8 w-8 text-green-600"/>
+                  <span className="text-xl font-bold">BFPC</span>
+                </a>
               </div>
               <div className="hidden md:flex space-x-8">
                 <a href="#features" className="text-green-700 hover:text-green-900 transition-colors">
@@ -100,7 +103,7 @@ export default function BFPCLanding() {
         </nav>
 
         {/* Hero Section with Image Slideshow */}
-        <section className="relative bg-white  py-20 lg:py-32 overflow-hidden">
+        <section  id = "hero" className="relative bg-white  py-20 lg:py-32 overflow-hidden">
           {/* Background Image Slideshow */}
           <div className="absolute inset-0 z-0">
             {heroImages.map((image, index) => (
@@ -113,7 +116,7 @@ export default function BFPCLanding() {
                     }`}
                 />
             ))}
-            {/*<div className="absolute inset-0 bg-white/70"></div>*/}
+            <div className="absolute inset-0 bg-white/40"></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -130,10 +133,12 @@ export default function BFPCLanding() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/signup">
-                    <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white shadow-lg">
+                    <div className="bg-green-600 hover:bg-green-700 text-white shadow-lg">
+                      <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white shadow-lg">
                         Join BFPC Today
-                      <ArrowRight className="ml-2 h-5 w-5" />
-                    </Button>
+                        <ArrowRight className="ml-2 h-5 w-5" />
+                      </Button>
+                    </div>
                   </Link>
                   <Button
                       size="lg"
