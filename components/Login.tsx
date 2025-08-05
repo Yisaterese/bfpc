@@ -116,7 +116,10 @@ export default function Login() {
       <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center p-4">
         <div className="w-full max-w-md relative">
           <Link href="/landingPage" className="absolute top-4 left-4 text-green-600 hover:text-green-700 transition-colors">
-            <ArrowLeft className="h-6 w-6" />
+            <div className="h-6 w-6 gap text-black"  >
+              <ArrowLeft/>
+              <h1>Back</h1>
+            </div>
           </Link>
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-2 mb-4">
