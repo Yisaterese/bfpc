@@ -129,10 +129,12 @@ export default function BFPCLanding() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white shadow-lg">
-                    Join BFPC Today
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  <Link href="/signup">
+                    <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white shadow-lg">
+                        Join BFPC Today
+                      <ArrowRight className="ml-2 h-5 w-5" />
+                    </Button>
+                  </Link>
                   <Button
                       size="lg"
                       variant="outline"
@@ -427,10 +429,12 @@ export default function BFPCLanding() {
               Join thousands of farmers already benefiting from BFPC's comprehensive agricultural platform.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-white text-green-600 hover:bg-green-50">
-                Get Started Today
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              <Link href="/signup">
+                <Button size="lg" className="bg-white text-green-600 hover:bg-green-50">
+                  Get Started Today
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
               <Button
                   size="lg"
                   variant="outline"
