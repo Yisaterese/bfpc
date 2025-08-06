@@ -22,6 +22,8 @@ export default function BFPCLanding() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const heroImages = [
+    "/images/ginger.jpg",
+    "/images/ginger-plant.jpg",
     "/images/farmer-hero.jpg",
     "/images/woman-farmer-corn.jpg",
     "/images/banana-harvest.jpg",
@@ -116,7 +118,7 @@ export default function BFPCLanding() {
                     }`}
                 />
             ))}
-            <div className="absolute inset-0 bg-white/40"></div>
+            <div className="absolute inset-0 bg-white/55"></div>
           </div>
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
