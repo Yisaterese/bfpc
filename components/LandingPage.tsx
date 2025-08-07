@@ -135,7 +135,7 @@ export default function BFPCLanding() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link href="/signup">
-                    <div className="bg-green-600 hover:bg-green-700 text-white shadow-lg">
+                    <div className="bg-green-600 hover:bg-green-700 text-white shadow-lg rounded">
                       <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white shadow-lg">
                         Join BFPC Today
                         <ArrowRight className="ml-2 h-5 w-5" />
@@ -359,7 +359,7 @@ export default function BFPCLanding() {
                       Real stories from farmers who have transformed their operations with BFPC
                      </p>
                    </div>
-        
+
                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                      {testimonials.map((testimonial, index) => (
               <Card key={index} className="border-green-100">
@@ -442,13 +442,13 @@ export default function BFPCLanding() {
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
               </Link>
-              <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-green-600 bg-transparent"
-              >
-                Schedule a Demo
-              </Button>
+              {/*<Button*/}
+              {/*    size="lg"*/}
+              {/*    variant="outline"*/}
+              {/*    className="border-white text-white hover:bg-white hover:text-green-600 bg-transparent"*/}
+              {/*>*/}
+              {/*  Schedule a Demo*/}
+              {/*</Button>*/}
             </div>
           </div>
         </section>

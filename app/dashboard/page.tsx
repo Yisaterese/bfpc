@@ -3,8 +3,8 @@
 import { useEffect } from "react"
 import { useAuth } from "../contexts/AuthContext"
 import { useRouter } from "next/navigation"
-import Dashboard from "../components/Dashboard"
 import Loading from "@/components/Loading"
+import Dashboard from "@/components/Dashboard";
 
 export default function DashboardPage() {
   const { user, loading } = useAuth()
