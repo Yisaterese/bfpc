@@ -1,7 +1,5 @@
-"use client"
 import BFPCLanding from "@/components/LandingPage";
-
-export default function (){
+export default function HomePage(){
     return(
         <BFPCLanding/>
     );
