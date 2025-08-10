@@ -31,7 +31,7 @@ export default function BFPCLanding() {
     "/images/cassava-farmer.jpg",
   ]
 
-    const testimonials = [
+  const testimonials = [
     {
       name: "Amina Ibrahim",
       location: "Makurdi, Benue State",
@@ -351,36 +351,36 @@ export default function BFPCLanding() {
 
 
         {/* Testimonials Section */}
-               <section id="testimonials" className="py-20 bg-white">
-                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                   <div className="text-center mb-16">
-                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Farmers Are Saying</h2>
-                     <p className="text-xl text-gray-600">
-                      Real stories from farmers who have transformed their operations with BFPC
-                     </p>
-                   </div>
+        <section id="testimonials" className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Farmers Are Saying</h2>
+              <p className="text-xl text-gray-600">
+                Real stories from farmers who have transformed their operations with BFPC
+              </p>
+            </div>
 
-                   <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                     {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-green-100">
-                <CardContent className="p-6">
-                  <div className="flex items-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-4 italic">"{testimonial.quote}"</p>
-                  <div>
-                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                    <div className="text-sm text-gray-500">{testimonial.crop}</div>
-                    <div className="text-sm text-gray-500">{testimonial.location}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {testimonials.map((testimonial, index) => (
+                  <Card key={index} className="border-green-100">
+                    <CardContent className="p-6">
+                      <div className="flex items-center mb-4">
+                        {[...Array(testimonial.rating)].map((_, i) => (
+                            <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
+                        ))}
+                      </div>
+                      <p className="text-gray-600 mb-4 italic">"{testimonial.quote}"</p>
+                      <div>
+                        <div className="font-semibold text-gray-900">{testimonial.name}</div>
+                        <div className="text-sm text-gray-500">{testimonial.crop}</div>
+                        <div className="text-sm text-gray-500">{testimonial.location}</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
         {/* Partnerships Section */}
         <section id="partnerships" className="py-20 bg-green-50">

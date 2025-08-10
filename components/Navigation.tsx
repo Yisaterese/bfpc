@@ -4,7 +4,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Leaf, Menu, X } from "lucide-react"
 import Link from "next/link"
-import { useAuth } from "../../app/contexts/AuthContext"
+import { useAuth } from "../app/contexts/AuthContext"
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

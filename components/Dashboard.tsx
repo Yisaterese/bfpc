@@ -41,7 +41,7 @@ import {
 } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { useAuth } from "@/app/contexts/AuthContext";
-
+import Link from "next/link";
 export default function Dashboard() {
     const { user, logout } = useAuth()
     const router = useRouter()
@@ -240,10 +240,13 @@ export default function Dashboard() {
                         {/* Mobile View */}
                         <div className="flex md:hidden items-center space-x-4">
                             <div className="flex flex-col items-center">
-                                <Avatar className="h-8 w-8">
-                                    <AvatarImage src="/placeholder.svg?height=32&width=32" alt={user?.name} />
-                                    <AvatarFallback>{user?.name?.charAt(0)}</AvatarFallback>
-                                </Avatar>
+                                
+                                <Link href="/profile" >  
+                                    <Avatar className="h-8 w-8">
+                                        <AvatarImage src="/placeholder.svg?height=32&width=32" alt={user?.name} />
+                                        <AvatarFallback>{user?.name?.charAt(0)}</AvatarFallback>
+                                    </Avatar>
+                                </Link>
                                 <p className="text-xs text-gray-500 mt-1">{user?.name}</p>
                             </div>
                         </div>
@@ -256,6 +259,7 @@ export default function Dashboard() {
                             </div>
 
                             {/* Notifications */}
+                        <Link href="/notification">
                             <Button variant="ghost" size="sm" className="relative">
                                 <Bell className="h-5 w-5" />
                                 {notifications > 0 && (
@@ -264,6 +268,7 @@ export default function Dashboard() {
                                     </Badge>
                                 )}
                             </Button>
+                        </Link>
 
                             {/* User Menu */}
                             <DropdownMenu>
