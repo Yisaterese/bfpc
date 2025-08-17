@@ -16,7 +16,8 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useEffect, useState } from "react"
-import Link from "next/link";
+import Link from "next/link"
+import EventsHero from "./EventsHero"
 
 export default function BFPCLanding() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
@@ -90,6 +91,9 @@ export default function BFPCLanding() {
                 <a href="#about" className="text-green-700 hover:text-green-900 transition-colors">
                   About
                 </a>
+                <Link href="/events" className="text-green-700 hover:text-green-900 transition-colors">
+                  Events
+                </Link>
                 <a href="#partnerships" className="text-green-700 hover:text-green-900 transition-colors">
                   Partners
                 </a>
@@ -211,6 +215,9 @@ export default function BFPCLanding() {
             ))}
           </div>
         </section>
+
+        {/* Events Hero Section */}
+        <EventsHero />
 
         {/* Features Section */}
         <section id="features" className="py-20 bg-white">

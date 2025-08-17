@@ -27,6 +27,9 @@ export default function Navigation() {
             <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors">
               About
             </a>
+            <Link href="/events" className="text-gray-700 hover:text-green-600 transition-colors">
+              Events
+            </Link>
             <a href="#testimonials" className="text-gray-700 hover:text-green-600 transition-colors">
               Testimonials
             </a>
@@ -73,6 +76,9 @@ export default function Navigation() {
               <a href="#about" className="text-gray-700 hover:text-green-600 transition-colors">
                 About
               </a>
+              <Link href="/events" className="text-gray-700 hover:text-green-600 transition-colors">
+                Events
+              </Link>
               <a href="#testimonials" className="text-gray-700 hover:text-green-600 transition-colors">
                 Testimonials
               </a>
